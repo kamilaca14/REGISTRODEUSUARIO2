@@ -1,0 +1,105 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    border: 3px solid #5A8DEE;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 28px;
+    color: #5A8DEE;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    width: 150px;
+    color: #333;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 160px);
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #5A8DEE;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #5A8DEE;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4b7edb;
+}
+
+/* Mensaje de éxito */
+.mensaje-exito {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    display: none; /* Oculto por defecto */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
